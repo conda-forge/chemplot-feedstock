@@ -1,5 +1,5 @@
 {% set name = "chemplot" %}
-{% set version = "1.2.0" %}
+{% set version = "1.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/chemplot-{{ version }}.tar.gz
-  sha256: 9ed0d761e121be80d908494d82638a090792d2dedb90062b22ecab07f633c515
+  sha256: 197b682c4dde0f6e5ee9a560f8a631afdfcb5a046f0795e23575c327e9b72386
 
 build:
   number: 0
@@ -55,7 +55,7 @@ about:
     their datasets. Chemplot contains smart algorithms behind which uses both structural and tailored 
     similarity. Moreover, it is easy to use even for non-experts.
   doc_url: https://chemplot.readthedocs.io/en/latest/
-  dev_url: https://github.com/mcsorkun/ChemPlot 
+  dev_url: https://github.com/mcsorkun/ChemPlot
 
 extra:
   recipe-maintainers:
