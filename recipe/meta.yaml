@@ -18,6 +18,19 @@ requirements:
   host:
     - pip
     - python >=3.10
+  run:
+    - python >=3.10
+    - pandas
+	  - numpy
+	  - matplotlib
+	  - seaborn
+	  - umap-learn
+	  - scikit-learn
+	  - bokeh
+	  - scipy
+    - rdkit
+	  - mordredcommunity
+    - networkx
 
 test:
   imports:
