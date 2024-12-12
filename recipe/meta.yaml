@@ -37,6 +37,12 @@ requirements:
 test:
   imports:
     - chemplot
+    - chemplot.tests
+  commands:
+    - python -m pytest --pyargs chemplot
+  requires:
+    - pytest
+    - python
 
 about:
   home: https://github.com/mcsorkun/ChemPlot
