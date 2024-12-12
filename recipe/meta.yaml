@@ -21,15 +21,15 @@ requirements:
   run:
     - python >=3.10
     - pandas
-	  - numpy
-	  - matplotlib
-	  - seaborn
-	  - umap-learn
-	  - scikit-learn
-	  - bokeh
-	  - scipy
+    - numpy
+    - matplotlib
+    - seaborn
+    - umap-learn
+    - scikit-learn
+    - bokeh
+    - scipy
     - rdkit
-	  - mordredcommunity
+    - mordredcommunity
     - networkx
 
 test:
