@@ -10,27 +10,29 @@ source:
   sha256: 197b682c4dde0f6e5ee9a560f8a631afdfcb5a046f0795e23575c327e9b72386
 
 build:
-  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
   host:
+    - python >=3.8
+    - setuptools >=64
     - pip
-    - python >=3.10
   run:
-    - python >=3.10
-    - pandas
+    - python >=3.8
+    - rdkit
     - numpy
+    - networkx
+    - packaging
+    - pandas
     - matplotlib
     - seaborn
     - umap-learn
     - scikit-learn
     - bokeh
     - scipy
-    - rdkit
     - mordredcommunity
-    - networkx
 
 test:
   imports:
