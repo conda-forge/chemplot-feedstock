@@ -1,5 +1,6 @@
 {% set name = "chemplot" %}
 {% set version = "1.3.0" %}
+{% set python_min = "3.8" %}
 
 package:
   name: {{ name|lower }}
@@ -16,23 +17,23 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - setuptools >=64
     - pip
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - rdkit
+    - mordredcommunity
     - numpy
     - networkx
     - packaging
     - pandas
-    - matplotlib
+    - matplotlib-base
     - seaborn
     - umap-learn
     - scikit-learn
-    - bokeh
+    - bokeh >=3,<4
     - scipy
-    - mordredcommunity
 
 test:
   imports:
@@ -41,8 +42,8 @@ test:
   commands:
     - python -m pytest --pyargs chemplot
   requires:
+    - python {{ python_min }} 
     - pytest
-    - python
 
 about:
   home: https://github.com/mcsorkun/ChemPlot
