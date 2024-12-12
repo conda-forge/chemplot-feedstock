@@ -12,12 +12,12 @@ source:
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install .
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python >=3.10
 
 test:
   imports:
