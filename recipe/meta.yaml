@@ -1,5 +1,5 @@
 {% set name = "chemplot" %}
-{% set version = "1.3.0" %}
+{% set version = "1.3.1" %}
 {% set python_min = "3.8" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/chemplot-{{ version }}.tar.gz
-  sha256: 306b34ffa825ea63713ddeb140ad3dfdd1633c7971d1c3c9dd7bf4f936b24aeb
+  sha256: 713f04a4d1ee1212b84ade7608161dbfe417c09274ccef96bb26cba799678233
 
 build:
   noarch: python
